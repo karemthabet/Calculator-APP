@@ -9,7 +9,7 @@ String userHint = '';
 String userAnswer = '';
 String answer = '';
 
-   class Homepage extends StatefulWidget {
+class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
   @override
@@ -18,6 +18,10 @@ String answer = '';
 
 class _MyWidgetState extends State<Homepage> {
   List<String> buttonsText = [
+    'AC',
+    'AC',
+    'AC',
+    'AC',
     'AC',
     'Del',
     '%',
@@ -107,8 +111,7 @@ class _MyWidgetState extends State<Homepage> {
                       buttoncolor: const Color(0xffd27d2d),
                       tapped: () {
                         setState(() {
-                          if (userAsk.isNotEmpty)
-                          {
+                          if (userAsk.isNotEmpty) {
                             userAsk = userAsk.substring(0, userAsk.length - 1);
                           }
                         });
@@ -131,7 +134,7 @@ class _MyWidgetState extends State<Homepage> {
                   return Custombutton(
                       buttontext: buttonsText[index],
                       textcolor: Colors.white,
-                      buttoncolor:  const Color(0xffd27d2d),
+                      buttoncolor: const Color(0xffd27d2d),
                       tapped: () {
                         setState(() {
                           userAsk += buttonsText[index];
