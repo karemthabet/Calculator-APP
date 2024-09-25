@@ -17,7 +17,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<Homepage> {
-  List<String> buttonsText = [
+  List<String> buttonsTextList = [
     'AC',
     'AC',
     'AC',
